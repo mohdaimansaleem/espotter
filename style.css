@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: rgb(255, 255, 255);
+    color: rgb(92, 92, 92);
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+.logo{
+    position: relative;
+    left: 20px;
+    top: 10px;
+    height: 13vh;
+    width: auto;
+
+}
+
+.menu{
+    
+    margin-top: 8px;
+}
+.list{
+    position: relative;
+    left: 38vw;
+    display: inline-block;
+    width:6vw;
+    height: 4vh;
+    margin: 0px 10px;
+    
+     
+}
+.link{
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4vh;
+    position: relative;
+    top: 2.5vh;
+    font-size: 19px;
+   
+}
+
+.link:hover{
+    text-decoration: underline 3px;
+    
+    
+    
+}
+
+.main{
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    top:7vh;
+    margin: auto;
+    
+    
+    background-color: rgb(47, 155, 139);
+    border-radius: 30px;
+}
+
+input{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+   
+}
+.search{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+     position: relative;
+    top: 23vh;
+}
+
+.header{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+    
+}
+.form{
+   position: relative;
+   left: 15vw;
+   top: 5vh;
+}
+
+.bttn{
+    background-color:rgb(75, 177, 75);
+    color: white;
+    border-color: rgb(255, 248, 248);
+    font-size: medium;
+    font-weight: bold;
+    
+}
+.bttn:hover{
+    background-color: rgb(27, 56, 28);
+    border-color: rgb(255, 248, 248);
+}
+
+.img{
+    display: flex;
+    position: relative;
+    top: 5.5vh;
+    left: 2vw;
+    width: 300px;
+    height: 350px;
+}
+.footer{
+    position: relative;
+    top: 8vh;
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-content: space-between;
+
+}
+
+.left{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 5vw;
+}
+
+img{
+    width: 50px;
+    height: 50px; 
+    margin: 0 10px;
+   
+}
+
+.right{
+   display: flex;
+   position: relative;
+   align-content: center;
+   justify-content: center;
+   top: 4vh;
+   left: 62vw;
+   
+   
+
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .logo{
+        width: 650px;
+        height: 200px;
+    }
+    .bttn{
+        font-size: xxx-large;  
+    }
+
+   
+    .img{
+        position: relative;
+        top: 60px;
+        left: 150px;
+        width: 350px;
+        height: 300px;
+        
+    }
+
+    .main{
+        height: 65vh;
+    }
+    .header{
+        position: relative;
+        top:17vh;
+       right: 35vw;
+        font-size: 40px;
+
+    }
+
+    input{
+       
+        position: relative;
+        right:35vw;
+        width: 65vw;
+        font-size: xx-large;
+       
+    }
+    .right{
+        position: relative;
+        left: -230px;
+        top: 1vh;
+    }
+    .left{
+        text-align: center;
+        position: relative;
+        left: 250px;
+        top: 1vh;
+        font-size: x-large;
+     
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+   
+   
+  }
+
+  @media screen and (max-width: 420px) {
+    .logo{
+        position: relative;
+        top: 1vh;
+        width: 345px;
+        height: 150px;
+    }
+    .img{
+        
+        display:none;
+        
+    }
+
+    .main{
+        height: 65vh;
+    }
+    .header{
+        font-size: large;
+
+    }
+
+    input{
+        width: 65vw;
+       
+    }
+    .right{
+        left: 0px;
+     
+    }
+    .left{
+        font-size: x-small;
+     
+    }
+    img{
+        height: 30px;
+        width: 30px;
+    }
+   
+   
+  }
