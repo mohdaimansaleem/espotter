@@ -14,12 +14,102 @@ input{
    
    
 }
+
+.img{
+    
+  width: 150px;
+  
+}
 .main{
     width: 280px;
     
 }
-    body{
-        background-color: chartreuse;
+  
+}
+
+@media only screen and (min-width:420px) and (max-width:520px){
+    .logo{
+        height: auto;
+        width: 320px;
     }
     
+h3{
+   
+    font-size: medium;
+}
+input{
+    width: 250px;
+    height: 40px;
+   
+   
+}
+
+.img{
+    
+  width: 200px;
+  
+}
+.main{
+    width: 350px;
+    
+}
+  
+}
+
+@media only screen and (min-width:520px) and (max-width:720px){
+    .logo{
+        height: auto;
+        width: 400px;
+    }
+    
+h3{
+   
+    font-size: large;
+}
+input{
+    width: 250px;
+    height: 40px;
+   
+   
+}
+
+.img{
+    
+  width: 250px;
+  
+}
+.main{
+    width: 350px;
+    
+}
+  
+}
+
+@media only screen and (min-width:720px) and (max-width:1200px){
+    .logo{
+        height: auto;
+        width: 500px;
+    }
+    
+h3{
+   
+    font-size: larger;
+}
+input{
+    width: 350px;
+    height: 40px;
+   
+   
+}
+
+.img{
+    
+  width: 300px;
+  
+}
+.main{
+    width: 450px;
+    
+}
+  
 }
