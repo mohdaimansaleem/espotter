@@ -1,0 +1,25 @@
+@media only screen and (min-width:320px) and (max-width:420px){
+    .logo{
+        height: auto;
+        width: 300px;
+    }
+    
+h3{
+   
+    font-size: small;
+}
+input{
+    width: 200px;
+    height: 40px;
+   
+   
+}
+.main{
+    width: 280px;
+    
+}
+    body{
+        background-color: chartreuse;
+    }
+    
+}
