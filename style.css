@@ -1,60 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
-    <title>Espotter</title>
-</head>
+.nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+  
+}
 
-<body>
-    <header>
-        <nav class="nav">
-            <div>
-                <a href="/index.html"><img class="logo" src="sreenidhi-logo.png" alt="logo"></a>
-            </div>
-        </nav>
- </header>
+#modal{
+    
+    width: 100vw;
+    height: 65vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    
+}
 
- <div id="modal">
-    <div>
-        
-        <h3>
-            we got it!!
-        </h3>
+#modal div{
+    
+    width: 25vw;
+    height: 65vh;
+    display: flex;
+    margin: auto;
+    background-color: blueviolet;
+    border-radius: 30px;
+     justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    height: 13vh;
+    width: auto;
+}
 
-    </div>
- </div>
- 
-    <main id="main" >
 
-        <div class="main" >
-            <div class="input">
-                <img src="location.png" class="img" alt="location marker image">
-                <label for="search">
-                    <h3>LET'S FIND YOUR CLASS</h3>
-                </label>
-                <input type="text"  name="search" id="search" placeholder="ROOM NUMBER" >
-                <input id="btn"  class="bttn" type="button" onclick="clicked()" value="search">
-            </div>
+h3{
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: medium;
+}
+input{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2vh;
+   
+}
+.input{
+   display: flex;
+   flex-direction: column;   
+}
 
-        </div>
 
-    </main>
-    <footer class="footer">
-        <div>
-            <p>Terms & Conditions <br>
+.main{
+    width: 25vw;
+    height: 65vh;
+    display: flex;
+    margin: auto;
+    background-color: rgb(47, 155, 139);
+    border-radius: 30px;
+     justify-content: center;
+    align-items: center;
+    
+}
 
-                © 2021 MOHD AIMAN SALEEM All rights reserved.
-            </p>
-        </div>
- </footer>
 
-<script src="index.js"></script>
-</body>
+.bttn{
+    background-color:rgb(75, 177, 75);
+    color: white;
+    border-color: rgb(255, 248, 248);
+    font-size: medium;
+    font-weight: bold;
+    
+}
+.bttn:hover{
+    background-color: rgb(27, 56, 28);
+    border-color: rgb(255, 248, 248);
+}
 
-</html>
+.img{
+    display: flex;
+    background-attachment: fixed;
+  align-self: center;
+  width: 200px;
+  height: auto;
+  position: relative;
+  bottom: 5vh;
+}
+.footer div{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
