@@ -11,6 +11,22 @@
     height: 18vh;
   
 }
+
+#modal{
+    
+    width: 100vw;
+    height: 65vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+#modal div{
+    
+   background-color: blueviolet;
+}
 .logo{
     height: 13vh;
     width: auto;
