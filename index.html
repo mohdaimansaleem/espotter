@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- head tag starts -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,11 @@
     <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
     <title>Espotter</title>
 </head>
-
-<body>
-    <header>
-        <nav class="nav">
+<!-- head tag ends -->
+<!-- body tag starts -->
+<body id="body">
+    <header id="header">
+        <nav id="nav">
             <div>
                 <a href="/index.html"><img class="logo" src="sreenidhi-logo.png" alt="logo"></a>
             </div>
@@ -22,30 +23,28 @@
 
  <div id="modal">
     <div>
-        
-        <h3>
+       <h3>
             we got it!!
         </h3>
-
     </div>
  </div>
  
     <main id="main" >
 
-        <div class="maindiv" >
+        <div id="maindiv">
             <div class="input">
-                <img src="location.png" class="img" alt="location marker image">
+                <img src="location.png" class="loc" alt="location marker image">
                 <label for="search">
                     <h3>LET'S FIND YOUR CLASS</h3>
                 </label>
                 <input type="text"  name="search" id="search" placeholder="ROOM NUMBER" >
-                <input id="btn"  class="bttn" type="button" onclick="clicked()" value="search">
+                <input id="btn"   type="button" onclick="clicked()" value="search">
             </div>
 
         </div>
 
     </main>
-    <footer class="footer">
+    <footer id="footer">
         <div>
             <p>Terms & Conditions <br>
 
@@ -56,5 +55,5 @@
 
 <script src="index.js"></script>
 </body>
-
+<!-- body tag ends -->
 </html>
