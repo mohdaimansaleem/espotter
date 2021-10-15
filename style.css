@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.nav{
+#nav{
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@
 }
 
 
-h3{
+label h3{
     text-align: center;
     margin-bottom: 2vh;
     font-size: medium;
@@ -61,7 +61,7 @@ input{
 }
 
 
-.maindiv{
+#maindiv{
     width: 25vw;
     height: 65vh;
     display: flex;
@@ -74,7 +74,7 @@ input{
 }
 
 
-.bttn{
+#btn{
     background-color:rgb(75, 177, 75);
     color: white;
     border-color: rgb(255, 248, 248);
@@ -82,12 +82,12 @@ input{
     font-weight: bold;
     
 }
-.bttn:hover{
+#btn:hover{
     background-color: rgb(27, 56, 28);
     border-color: rgb(255, 248, 248);
 }
 
-.img{
+.loc{
     display: flex;
     background-attachment: fixed;
   align-self: center;
@@ -96,7 +96,7 @@ input{
   position: relative;
   bottom: 5vh;
 }
-.footer div{
+#footer div{
     margin-top: 4vh;
     display: flex;
     justify-content: center;
