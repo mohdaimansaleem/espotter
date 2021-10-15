@@ -24,6 +24,12 @@ input{
     width: 280px;
     
 }
+
+#modal div{
+    
+    width: 280px;
+    
+}
   
 }
 
@@ -50,6 +56,12 @@ input{
   
 }
 #maindiv{
+    width: 350px;
+    
+}
+
+#modal div{
+    
     width: 350px;
     
 }
@@ -82,6 +94,12 @@ input{
     width: 350px;
     
 }
+
+#modal div{
+    
+    width: 350px;
+    
+}
   
 }
 
@@ -108,6 +126,12 @@ input{
   
 }
 #maindiv{
+    width: 450px;
+    
+}
+
+#modal div{
+    
     width: 450px;
     
 }
