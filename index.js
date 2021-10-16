@@ -1,3 +1,11 @@
+var map = L.map('map').setView([17.454704, 78.666414], 17);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+let marker = L.marker([17.454704, 78.666414]).addTo(map);
+
 function clicked() {
     let room = document.getElementById("search").value;
 
@@ -27,3 +35,8 @@ function unclicked() {
     document.getElementById("main").style.display = "flex";
 
 }
+
+
+
+
+
