@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- head tag starts -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+
     <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
     <title>Espotter</title>
 </head>
 <!-- head tag ends -->
 <!-- body tag starts -->
+
 <body id="body">
     <header id="header">
         <nav id="nav">
@@ -19,22 +23,22 @@
                 <a href="/index.html"><img class="logo" src="sreenidhi-logo.png" alt="logo"></a>
             </div>
         </nav>
- </header>
+    </header>
 
- <div id="modal">
-    <div>
-       <h3 id="h3">
-            we got it!!
-        </h3>
-        <div>
-            <input type="button" id="closebtn" onclick="unclicked()" value="close">
+    <div id="modal">
+        <div class="as">
+            <div id="map">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.104662234015!2d78.66422531470417!3d17.45470398803828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI3JzE2LjkiTiA3OMKwMzknNTkuMSJF!5e0!3m2!1sen!2sin!4v1634372738845!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading=""></iframe> -->
+            </div>
+            <div>
+                <input type="button" id="closebtn" onclick="unclicked()" value="close">
+            </div>
         </div>
+
+
     </div>
 
-  
- </div>
- 
-    <main id="main" >
+    <main id="main">
 
         <div id="maindiv">
             <div class="input">
@@ -42,8 +46,8 @@
                 <label for="search">
                     <h3>LET'S FIND YOUR CLASS</h3>
                 </label>
-                <input type="text"  name="search" id="search" placeholder="ROOM NUMBER" >
-                <input id="btn"   type="button" onclick="clicked()" value="search">
+                <input type="text" name="search" id="search" placeholder="ROOM NUMBER">
+                <input id="btn" type="button" onclick="clicked()" value="search">
             </div>
 
         </div>
@@ -56,9 +60,11 @@
                 © 2021 MOHD AIMAN SALEEM All rights reserved.
             </p>
         </div>
- </footer>
+    </footer>
 
-<script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="index.js"></script>
 </body>
 <!-- body tag ends -->
+
 </html>
