@@ -11,7 +11,24 @@
     height: 18vh;
   
 }
+#h3{
+    position: relative;
+    top:20vh;
+}
 
+#closebtn{
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 18vh;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#closebtn:hover{
+  background-color: rgb(105, 22, 7);
+}
 #modal{
     
     width: 100vw;
@@ -28,10 +45,11 @@
     width: 25vw;
     height: 65vh;
     display: flex;
+    flex-direction: column;
     margin: auto;
     background-color: blueviolet;
     border-radius: 30px;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
     
 }
@@ -42,6 +60,7 @@
 
 
 label h3{
+    
     text-align: center;
     margin-bottom: 2vh;
     font-size: medium;
@@ -85,6 +104,7 @@ input{
 #btn:hover{
     background-color: rgb(27, 56, 28);
     border-color: rgb(255, 248, 248);
+    cursor: pointer;
 }
 
 .loc{
