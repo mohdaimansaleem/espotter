@@ -16,7 +16,7 @@ input{
 }
 #closebtn{
  
-    top: 110px;
+   
     font-size: medium;
 
 }
@@ -36,9 +36,17 @@ input{
     
 }
 
-#modal div{
+#modal .as{
     
     width: 280px;
+    
+}
+#map{
+  
+
+    
+    width: 270px;
+    
     
 }
   
@@ -62,7 +70,7 @@ input{
 }
 #closebtn{
  
-    top: 110px;
+
     font-size: medium;
 
 }
@@ -82,9 +90,16 @@ input{
     
 }
 
-#modal div{
+#modal .as{
     
     width: 350px;
+    
+}#map{
+  
+
+    
+    width: 340px;
+    
     
 }
   
@@ -115,7 +130,7 @@ input{
 
 #closebtn{
  
-    top: 110px;
+    
     font-size: medium;
 
 }
@@ -129,9 +144,17 @@ input{
     
 }
 
-#modal div{
+#modal .as{
     
     width: 350px;
+    
+}
+#map{
+  
+
+    
+    width: 340px;
+    
     
 }
   
@@ -165,7 +188,7 @@ input{
 }
 #closebtn{
  
-    top: 110px;
+   
     font-size: medium;
 
 }
@@ -175,9 +198,18 @@ input{
     top:200px;
 }
 
-#modal div{
+#modal .as{
     
     width: 450px;
+    
+}
+
+#map{
+  
+
+    
+    width: 445px;
+    
     
 }
   
