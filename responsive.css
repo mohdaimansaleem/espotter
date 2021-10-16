@@ -14,6 +14,17 @@ input{
    
    
 }
+#closebtn{
+ 
+    top: 110px;
+    font-size: medium;
+
+}
+
+#h3{
+    font-size: small;
+    top:200px;
+}
 
 .loc{
     
@@ -48,6 +59,17 @@ input{
     height: 40px;
    
    
+}
+#closebtn{
+ 
+    top: 110px;
+    font-size: medium;
+
+}
+
+#h3{
+    font-size: small;
+    top:200px;
 }
 
 .loc{
@@ -90,6 +112,18 @@ input{
   width: 250px;
   
 }
+
+#closebtn{
+ 
+    top: 110px;
+    font-size: medium;
+
+}
+
+#h3{
+    font-size: small;
+    top:200px;
+}
 #maindiv{
     width: 350px;
     
@@ -128,6 +162,17 @@ input{
 #maindiv{
     width: 450px;
     
+}
+#closebtn{
+ 
+    top: 110px;
+    font-size: medium;
+
+}
+
+#h3{
+    font-size: small;
+    top:200px;
 }
 
 #modal div{
