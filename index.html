@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
@@ -26,18 +26,10 @@
         </nav>
     </header>
 
-    <div id="modal">
-        <div class="modaldiv">
-            <div id="map">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.104662234015!2d78.66422531470417!3d17.45470398803828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI3JzE2LjkiTiA3OMKwMzknNTkuMSJF!5e0!3m2!1sen!2sin!4v1634372738845!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading=""></iframe> -->
-            </div>
-            <div class="backbtn">
-                <input type="button" id="closebtn" onclick="unclicked()" value="close">
-            </div>
-        </div>
 
 
-    </div>
+
+
 
     <main id="main">
 
@@ -47,8 +39,8 @@
                 <label for="search">
                     <h3>LET'S FIND YOUR CLASS</h3>
                 </label>
-                <input type="text" name="search" id="search" placeholder="ROOM NUMBER">
-                <input id="btn" type="button" onclick="clicked()" value="search">
+                <input type="text" name="search" id="search"  placeholder="ROOM NUMBER" required>
+                   <a href="map.html"> <input type="button" id="btn" value="CLICK HERE"></a> 
             </div>
 
         </div>
@@ -63,7 +55,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
     <script src="index.js"></script>
 </body>
 <!-- body tag ends -->
