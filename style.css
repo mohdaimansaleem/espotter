@@ -1,136 +1,140 @@
 *{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
+
 
 #nav{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 18vh;
-  
-}
-#h3{
-    position: relative;
-    top:20vh;
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+justify-content: center;
+height: 18vh;
 }
 
-
-#closebtn{
-    background-color: cornflowerblue;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    top:0vh;
-    font-size: medium;
-    font-weight: bold;
-}
-
-#closebtn:hover{
-  background-color: rgb(105, 22, 7);
-}
-#modal{
-    
-    width: 100vw;
-    height: 65vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    
-}
-
-#modal .as{
-    
-    width: 25vw;
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    background-color: blueviolet;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#map{
-  
-
-    height:45vh;
-    width: 20vw;
-    border-radius: 20px;
-    background-color: rgb(0, 74, 77);
-    
-}
-.logo{
-    height: 13vh;
-    width: auto;
-}
-
-
-label h3{
-    
-    text-align: center;
-    margin-bottom: 2vh;
-    font-size: medium;
-}
-input{
-    width: 20vw;
-    height: 6vh;
-    border-radius: 20px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 2vh;
-   
-}
-.input{
-   display: flex;
-   flex-direction: column;   
+.clg{
+height: 13vh;
+width: auto;
 }
 
 
 #maindiv{
-    width: 25vw;
-    height: 65vh;
-    display: flex;
-    margin: auto;
-    background-color: rgb(47, 155, 139);
-    border-radius: 30px;
-     justify-content: center;
-    align-items: center;
+width: 25vw;
+height: 65vh;
+display: flex;
+margin: auto;
+background-image:url("background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 30px;
+justify-content: center;
+align-items: center;
+        
+}
     
+    
+label h3{
+text-align: center;
+margin-bottom: 2vh;
+margin-top: 50px;
+font-size: larger;
+color: rgb(0, 0, 0);
+background-color: rgb(48, 83, 24);
+font-weight: bolder;
+        
 }
 
+input{
+width: 20vw;
+height: 6vh;
+border-radius: 20px;
+text-align: center;
+font-weight: bold;
+margin-top: 2vh;
+    
+}
+.input{
+display: flex;
+flex-direction: column;   
+}
 
 #btn{
-    background-color:rgb(75, 177, 75);
-    color: white;
-    border-color: rgb(255, 248, 248);
-    font-size: medium;
-    font-weight: bold;
+background-color:rgb(175, 228, 77);
+color: white;
+border-color: rgb(255, 248, 248);
+font-size: medium;
+font-weight: bold;
     
 }
 #btn:hover{
-    background-color: rgb(27, 56, 28);
-    border-color: rgb(255, 248, 248);
-    cursor: pointer;
+background-color: rgb(110, 109, 26);
+border-color: rgb(255, 248, 248);
+cursor: pointer;
 }
 
-.loc{
-    display: flex;
-    background-attachment: fixed;
-  align-self: center;
-  width: 200px;
-  height: auto;
-  position: relative;
-  bottom: 5vh;
+.logo{
+display: flex;
+background-attachment: fixed;
+align-self: center;
+border-radius: 50%;
+width: 20vh;
+height: auto;
 }
 #footer div{
-    margin-top: 4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+background-color: rgb(212, 211, 211);
+margin-top: 25px;
+height: 14vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
+
+#modal{
+width: 100vw;
+height: 65vh;
+display: none;
+justify-content: center;
+align-items: center;
+z-index: 100;
+background-color: rgb(255, 255, 255);
+    
+}
+
+#modaldiv{
+display: flex;
+flex-direction: column;
+margin: auto;
+background-color: rgb(255, 255, 255);
+justify-content: center;
+align-items: center;
+    
+}
+
+#map{
+margin: auto;
+width: 90vw;
+height: 55vh;
+}
+
+.backbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#closebtn{
+background-color: cornflowerblue;
+color: white;
+cursor: pointer;
+position: relative;
+font-size: medium;
+font-weight: bold;
+}
+
+#closebtn:hover{
+background-color: rgb(105, 22, 7);
+}
+p{
+    font-size: medium;
+}
+
