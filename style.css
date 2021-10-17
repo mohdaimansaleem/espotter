@@ -110,11 +110,24 @@ align-items: center;
     
 }
 
-#map{
-margin: auto;
-width: 90vw;
-height: 55vh;
+
+#mapbox{
+    
+    height: 100vh;
+    background-color: rgb(144, 144, 148);
+    
 }
+
+#map{
+
+width: 90vw;
+height: 90vh;
+position: relative;
+margin: auto;
+top: 5vh;
+
+}
+
 
 .backbtn{
     display: flex;
