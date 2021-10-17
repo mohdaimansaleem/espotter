@@ -1,216 +1,175 @@
 @media only screen and (min-width:320px) and (max-width:420px){
-    .logo{
-        height: auto;
-        width: 300px;
-    }
     
- label h3{
-   
-    font-size: small;
+#nav{
+height: 120px;
+    
 }
+.clg{
+height: auto;
+width: 300px;
+}
+
+#maindiv{
+width:80vw;
+    
+}
+label h3{
+font-size: small;
+}
+
 input{
-    width: 200px;
-    height: 40px;
-   
-   
+width: 200px;
+height: 40px;
+}
+#btn{
+font-size: medium;
 }
 #closebtn{
- 
-   
-    font-size: medium;
-
+font-size: medium;
 }
 
-#h3{
-    font-size: small;
-    top:200px;
+.logo{
+width: 150px;
+height: auto;  
 }
 
-.loc{
-    
-  width: 150px;
-  
-}
-#maindiv{
-    width: 280px;
-    
-}
-
-#modal .as{
-    
-    width: 280px;
-    
-}
-#map{
-  
-
-    
-    width: 270px;
-    
-    
+#footer div{
+height: 15vh;
 }
   
 }
 
 @media only screen and (min-width:420px) and (max-width:520px){
-    .logo{
+    #nav{
+        height: 150px;
+            
+        }
+        .clg{
         height: auto;
-        width: 320px;
-    }
-    
- label h3{
-   
-    font-size: medium;
-}
-input{
-    width: 250px;
-    height: 40px;
-   
-   
-}
-#closebtn{
- 
+        width: 380px;
+        }
+        
+        #maindiv{
+        width:85vw;
+            
+        }
+        label h3{
+        font-size: medium;
+        }
+        
+        input{
+            width: 250px;
+            height: 40px;
+        }
+        #btn{
+        font-size: medium;
+        }
+        #closebtn{
+        font-size: medium;
+        }
+        
+        .logo{
+            width: 200px;
+        height: auto;  
+        }
+        
+        #footer div{
+        height: 15vh;
+        }
 
-    font-size: medium;
-
-}
-
-#h3{
-    font-size: small;
-    top:200px;
-}
-
-.loc{
-    
-  width: 200px;
-  
-}
-#maindiv{
-    width: 350px;
-    
-}
-
-#modal .as{
-    
-    width: 350px;
-    
-}#map{
-  
 
     
-    width: 340px;
     
-    
-}
+
   
 }
 
 @media only screen and (min-width:520px) and (max-width:720px){
-    .logo{
-        height: auto;
-        width: 400px;
+
+        
+#nav{
+    height: 150px;
+        
+    }
+    .clg{
+    height: auto;
+    width: 400px;
     }
     
- label h3{
-   
-    font-size: large;
-}
-input{
-    width: 250px;
-    height: 40px;
-   
-   
-}
-
-.loc{
-    
-  width: 250px;
-  
-}
-
-#closebtn{
- 
-    
+    #maindiv{
+    width:85vw;
+        
+    }
+    label h3{
     font-size: medium;
-
-}
-
-#h3{
-    font-size: small;
-    top:200px;
-}
-#maindiv{
-    width: 350px;
+    }
     
-}
-
-#modal .as{
+    input{
+        width: 250px;
+        height: 40px;
+    }
+    #btn{
+    font-size: medium;
+    }
+    #closebtn{
+    font-size: medium;
+    }
     
-    width: 350px;
+    .logo{
+    width: 200px;
+    height: auto;  
+    }
     
-}
-#map{
-  
-
+    #footer div{
+    height: 15vh;
+    }
     
-    width: 340px;
-    
-    
-}
+   
   
 }
 
 @media only screen and (min-width:720px) and (max-width:1200px){
-    .logo{
-        height: auto;
-        width: 500px;
+
+
+           
+#nav{
+    height: 200px;
+        
+    }
+    .clg{
+    height: auto;
+    width: 500px;
     }
     
-label h3{
-   
+    #maindiv{
+    width:85vw;
+        
+    }
+    label h3{
     font-size: larger;
-}
-input{
-    width: 350px;
-    height: 40px;
-   
-   
-}
+    }
+    
+    input{
+        width: 350px;
+        height: 40px;
+       
+    }
+    #btn{
+    font-size: larger;
+    }
+    #closebtn{
+    font-size: larger;
+    }
+    
+    .logo{
+    width: 200px;
+    height: auto;  
+    }
+    
+    #footer div{
+    height: 9vh;
+    }
 
-.loc{
-    
-  width: 300px;
-  
-}
-#maindiv{
-    width: 450px;
-    
-}
-#closebtn{
- 
-   
-    font-size: medium;
 
-}
-
-#h3{
-    font-size: small;
-    top:200px;
-}
-
-#modal .as{
-    
-    width: 450px;
-    
-}
-
-#map{
-  
-
-    
-    width: 445px;
-    
-    
-}
   
 }
