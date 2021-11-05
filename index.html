@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- head tag starts -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
     <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
-    <title>Espotter</title>
+    <title>ESPOTTER 2.0</title>
 </head>
-<!-- head tag ends -->
-<!-- body tag starts -->
 
 <body id="body">
     <header id="header">
@@ -25,39 +24,48 @@
             </div>
         </nav>
     </header>
-
-
-
-
-
-
     <main id="main">
-
         <div id="maindiv">
             <div class="input">
                 <img src="logo.jpg" class="logo" alt="location marker image">
                 <label for="search">
                     <h3>LET'S FIND YOUR CLASS</h3>
                 </label>
-                <input type="text" name="search" id="search"  placeholder="ROOM NUMBER" required>
-                   <a href="map.html"> <input type="button" id="btn" value="CLICK HERE"></a> 
+                
+                <input type="text" name="search" id="search" placeholder="ROOM NUMBER">
+                <a href="#mapbox"> <input type="button" id="btn" onclick="clicked()" value="SEARCH"></a>
+                
+
             </div>
 
         </div>
+
+
+        <div id="mapbox">
+
+            <div id="map">
+
+            </div> 
+            <div id="again">
+                <a href="#header"> <input type="button" id="btn2" onclick="load()" value="RESET"></a>
+            </div>
+           
+        </div>
+
 
     </main>
     <footer id="footer">
         <div>
             <p>Terms & Conditions <br>
 
-                © 2021 MOHD AIMAN SALEEM All rights reserved.
+                © 2021 2762 All rights reserved.
             </p>
         </div>
     </footer>
 
-    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <script src="index.js"></script>
 </body>
-<!-- body tag ends -->
-
 </html>
