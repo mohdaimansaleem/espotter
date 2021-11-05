@@ -1,7 +1,7 @@
 @media only screen and (min-width:320px) and (max-width:420px){
     
 #nav{
-height: 120px;
+height: 18vh;
     
 }
 .clg{
@@ -10,7 +10,9 @@ width: 300px;
 }
 
 #maindiv{
-width:80vw;
+width:85vw;
+height: 72vh;
+margin-bottom: 10vh;
     
 }
 label h3{
@@ -24,7 +26,7 @@ height: 40px;
 #btn{
 font-size: medium;
 }
-#closebtn{
+#btn2{
 font-size: medium;
 }
 
@@ -33,15 +35,23 @@ width: 150px;
 height: auto;  
 }
 
+#mapbox{
+    width: 100vw;
+}
+
+#map{
+    width: 90vw;
+}
+
 #footer div{
-height: 15vh;
+height: 10vh;
 }
   
 }
 
 @media only screen and (min-width:420px) and (max-width:520px){
     #nav{
-        height: 150px;
+        height: 18vh;
             
         }
         .clg{
@@ -50,7 +60,9 @@ height: 15vh;
         }
         
         #maindiv{
-        width:85vw;
+        width:82vw;
+        height: 72vh;
+        margin-bottom: 10vh;
             
         }
         label h3{
@@ -64,7 +76,7 @@ height: 15vh;
         #btn{
         font-size: medium;
         }
-        #closebtn{
+        #btn2{
         font-size: medium;
         }
         
@@ -72,9 +84,17 @@ height: 15vh;
             width: 200px;
         height: auto;  
         }
+        #mapbox{
+            width: 100vw;
+            
+        }
+        
+        #map{
+            width: 90vw;
+        }
         
         #footer div{
-        height: 15vh;
+        height: 10vh;
         }
 
 
@@ -88,7 +108,7 @@ height: 15vh;
 
         
 #nav{
-    height: 150px;
+    height: 18vh;
         
     }
     .clg{
@@ -97,7 +117,8 @@ height: 15vh;
     }
     
     #maindiv{
-    width:85vw;
+        height: 72vh;
+        margin-bottom: 10vh;
         
     }
     label h3{
@@ -111,17 +132,24 @@ height: 15vh;
     #btn{
     font-size: medium;
     }
-    #closebtn{
+    #btn2{
     font-size: medium;
     }
     
+    #mapbox{
+        width: 100vw;
+    }
+    
+    #map{
+        width: 90vw;
+    }
     .logo{
     width: 200px;
     height: auto;  
     }
     
     #footer div{
-    height: 15vh;
+    height: 10vh;
     }
     
    
@@ -133,7 +161,7 @@ height: 15vh;
 
            
 #nav{
-    height: 200px;
+    height:18vh;
         
     }
     .clg{
@@ -143,6 +171,8 @@ height: 15vh;
     
     #maindiv{
     width:85vw;
+    height: 72vh;
+    margin-bottom: 10vh;
         
     }
     label h3{
@@ -157,8 +187,15 @@ height: 15vh;
     #btn{
     font-size: larger;
     }
-    #closebtn{
+    #btn2{
     font-size: larger;
+    }
+    #mapbox{
+        width: 100vw;
+    }
+    
+    #map{
+        width: 90vw;
     }
     
     .logo{
@@ -167,7 +204,7 @@ height: 15vh;
     }
     
     #footer div{
-    height: 9vh;
+    height: 10vh;
     }
 
 
