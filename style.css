@@ -20,7 +20,7 @@ width: auto;
 
 #maindiv{
 width: 25vw;
-height: 65vh;
+height: 72vh;
 display: flex;
 margin: auto;
 background-image:url("background2.jpeg");
@@ -29,6 +29,7 @@ background-size: cover;
 border-radius: 30px;
 justify-content: center;
 align-items: center;
+margin-bottom: 10vh;
         
 }
     
@@ -38,7 +39,8 @@ text-align: center;
 margin-bottom: 2vh;
 margin-top: 50px;
 font-size: larger;
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+background-color: rgb(104, 104, 104);
 font-weight: bolder;
         
 }
@@ -58,7 +60,7 @@ flex-direction: column;
 }
 
 #btn{
-background-color:rgb(175, 228, 77);
+background-color:rgb(23, 70, 73);
 color: white;
 border-color: rgb(255, 248, 248);
 font-size: medium;
@@ -66,7 +68,7 @@ font-weight: bold;
     
 }
 #btn:hover{
-background-color: rgb(110, 109, 26);
+background-color: rgb(10, 100, 70);
 border-color: rgb(255, 248, 248);
 cursor: pointer;
 }
@@ -80,72 +82,59 @@ width: 20vh;
 height: auto;
 }
 #footer div{
-background-color: rgb(212, 211, 211);
-margin-top: 25px;
-height: 14vh;
+background-color: rgb(241, 241, 241);
+height: 10vh;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
 }
 
-#modal{
-width: 100vw;
-height: 65vh;
-display: none;
-justify-content: center;
-align-items: center;
-z-index: 100;
-background-color: rgb(255, 255, 255);
-    
-}
-
-#modaldiv{
-display: flex;
-flex-direction: column;
-margin: auto;
-background-color: rgb(255, 255, 255);
-justify-content: center;
-align-items: center;
-    
-}
-
-
 #mapbox{
     
-    height: 100vh;
-    background-color: rgb(144, 144, 148);
+    height: 90vh;
+    background-color: rgb(212, 212, 218);
     
 }
 
 #map{
 
 width: 90vw;
-height: 90vh;
+height: 80vh;
 position: relative;
 margin: auto;
-top: 5vh;
+top: 2vh;
 
 }
 
-
-.backbtn{
+#again{
+    
+    height: 10vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-#closebtn{
-background-color: cornflowerblue;
-color: white;
-cursor: pointer;
-position: relative;
-font-size: medium;
-font-weight: bold;
-}
+#btn2{
+    position: relative;
+    top: 1vh;
+    width: 10vw;
+    border-radius: 50%;
+    background-color:rgb(23, 70, 73);
+    color: white;
+    border-color: rgb(255, 248, 248);
+    font-size: medium;
+    font-weight: bold;
+    height: 5vh;
+        
+    }
+    #btn2:hover{
+    background-color: rgb(10, 100, 70);
+    border-color: rgb(255, 248, 248);
+    cursor: pointer;
+    }
 
-#closebtn:hover{
-background-color: rgb(105, 22, 7);
-}
+
+
 p{
     font-size: medium;
 }
