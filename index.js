@@ -16,7 +16,7 @@ function clicked() {
   }
 
   if (roomNumber.startsWith("11") || roomNumber.startsWith("12") || roomNumber.startsWith("13") || roomNumber.startsWith("14")) {
-    if (parseInt(roomNumber) >= 1101 && parseInt(roomNumber) <= 1114 || parseInt(roomNumber) >= 1201 && parseInt(roomNumber) <= 2214 || parseInt(roomNumber) >= 1301 && parseInt(roomNumber) <=1320 || parseInt(roomNumber) >= 1401 && parseInt(roomNumber) <= 2415) {
+    if (parseInt(roomNumber) >= 1101 && parseInt(roomNumber) <= 1114 || parseInt(roomNumber) >= 1201 && parseInt(roomNumber) <= 2214 || parseInt(roomNumber) >= 1301 && parseInt(roomNumber) <=1320 || parseInt(roomNumber) >= 1401 && parseInt(roomNumber) <= 1415) {
       roomNumber = "1001"
     }
 
@@ -64,6 +64,7 @@ function clicked() {
 
 
   L.marker([lat, lon]).addTo(map);
+  
 
 }
 
