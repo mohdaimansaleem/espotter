@@ -14,10 +14,20 @@ function clicked() {
     }
 
   }
+
+  if (roomNumber.startsWith("11") || roomNumber.startsWith("12") || roomNumber.startsWith("13") || roomNumber.startsWith("14")) {
+    if (parseInt(roomNumber) >= 1101 && parseInt(roomNumber) <= 1114 || parseInt(roomNumber) >= 1201 && parseInt(roomNumber) <= 2214 || parseInt(roomNumber) >= 1301 && parseInt(roomNumber) <=1320 || parseInt(roomNumber) >= 1401 && parseInt(roomNumber) <= 2415) {
+      roomNumber = "1001"
+    }
+
+  }
+
+
+
   var coordinates = {
     "1001": {
-      "lat": 17.455249973437514,
-      "long": 78.6665028333664,
+      "lat": 17.455953613855996,
+      "long":78.66597712039948,
     },
 
     "369": {
