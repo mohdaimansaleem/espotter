@@ -117,8 +117,8 @@ top: 2vh;
 #btn2{
     position: relative;
     top: 1vh;
-    width: 10vw;
-    border-radius: 50%;
+    width: 15vw;
+    border-radius: 2%;
     background-color:rgb(23, 70, 73);
     color: white;
     border-color: rgb(255, 248, 248);
