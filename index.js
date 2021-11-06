@@ -30,7 +30,7 @@ function clicked() {
   //IT BLOCK
   }
   if (roomNumber.startsWith("42") || roomNumber.startsWith("43") || roomNumber.startsWith("44") ) {
-    if (parseInt(roomNumber) >= 4201 && parseInt(roomNumber) <= 4215 || parseInt(roomNumber) >= 4301 && parseInt(roomNumber) <= 4315 || parseInt(roomNumber) >= 4402&& parseInt(roomNumber) <=4415) {
+    if (parseInt(roomNumber) >= 4201 && parseInt(roomNumber) <= 4215 || parseInt(roomNumber) >= 4301 && parseInt(roomNumber) <= 4315 || parseInt(roomNumber) >= 4401 && parseInt(roomNumber) <=4415) {
       roomNumber = "1003"
     }
      //FIRST YEAR BLOCK
