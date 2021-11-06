@@ -33,7 +33,7 @@ function clicked() {
   }
 
   if (roomNumber.startsWith("81") || roomNumber.startsWith("82") || roomNumber.startsWith("83")|| roomNumber.startsWith("84")) {
-    if (parseInt(roomNumber) >= 8101 && parseInt(roomNumber) <= 8107 || parseInt(roomNumber) >= 8201 && parseInt(roomNumber) <= 8207 || parseInt(roomNumber) >= 8301&& parseInt(roomNumber) <=8307|| parseInt(roomNumber) >= 8401&& parseInt(roomNumber) <=8407) {
+    if (parseInt(roomNumber) >= 8101 && parseInt(roomNumber) <= 8107 || parseInt(roomNumber) >= 8201 && parseInt(roomNumber) <= 8207 || parseInt(roomNumber) >= 8301 && parseInt(roomNumber) <=8307|| parseInt(roomNumber) >= 8401 && parseInt(roomNumber) <=8407) {
       roomNumber = "1004"
     }
   // BIOTECH BLOCK
@@ -56,7 +56,6 @@ function clicked() {
       "long": 78.6670795083046,
 
     },
-
     "1004": {
       "lat": 17.45532673434248,
       "long": 78.66764545440672,
@@ -66,7 +65,7 @@ function clicked() {
   };
 
   lat = coordinates[roomNumber]["lat"];
-  lon = coordinates[roomNumber]['long'];
+  lon = coordinates[roomNumber]["long"];
 
   var map = L.map('map').setView([17.454704, 78.666414], 17);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
