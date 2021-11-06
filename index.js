@@ -19,27 +19,27 @@ function clicked() {
  
 
   if (sNumber.startsWith("11") || sNumber.startsWith("12") || sNumber.startsWith("13") || sNumber.startsWith("14")) {
-    if (roomNumber >= 1101 && roomNumber <= 1114 || roomNumber >= 1201 && roomNumber <= 2214 || roomNumber >= 1301 && roomNumber <=1320 || roomNumber >= 1401 && roomNumber <= 1415) {
+    if ((roomNumber >= 1101 && roomNumber <= 1114 )|| (roomNumber >= 1201 && roomNumber <= 2214 ) || (roomNumber >= 1301 && roomNumber <=1320 )|| (roomNumber >= 1401 && roomNumber <= 1415)) {
       sNumber = "1001"
     }
     //ECE BLOCK
   }
 
   if (sNumber.startsWith("21") || sNumber.startsWith("22") || sNumber.startsWith("23") || sNumber.startsWith("24")) {
-    if (roomNumber >= 2101 && roomNumber <= 2112 || roomNumber >= 2201 && roomNumber <= 2215 || roomNumber >= 2301 && roomNumber <= 2311 || roomNumber >= 2401 && roomNumber <= 2414) {
+    if ((roomNumber >= 2101 && roomNumber <= 2112 )|| (roomNumber >= 2201 && roomNumber <= 2215 )||( roomNumber >= 2301 && roomNumber <= 2311) || (roomNumber >= 2401 && roomNumber <= 2414)) {
       sNumber = "1002"
     }
   //IT BLOCK
   }
   if (sNumber.startsWith("42") || sNumber.startsWith("43") || sNumber.startsWith("44") ) {
-    if (roomNumber >= 4201 && roomNumber <= 4215 || roomNumber >= 4301 && roomNumber <= 4315 || roomNumber >= 4401 && roomNumber <=4415) {
+    if ((roomNumber >= 4201 && roomNumber <= 4215 )||( roomNumber >= 4301 && roomNumber <= 4315 )|| (roomNumber >= 4401 && roomNumber <=4415)) {
       sNumber = "1003"
     }
      //FIRST YEAR BLOCK
   }
 
   if (sNumber.startsWith("81") || sNumber.startsWith("82") || sNumber.startsWith("83")|| sNumber.startsWith("84")) {
-    if (roomNumber >= 8101 && roomNumber <= 8107 || roomNumber >= 8201 && roomNumber <= 8207 || roomNumber >= 8301 && roomNumber <=8307|| roomNumber >= 8401 && roomNumber <=8407) {
+    if ((roomNumber >= 8101 && roomNumber <= 8107) || (roomNumber >= 8201 && roomNumber <= 8207 )|| (roomNumber >= 8301 && roomNumber <=8307)||( roomNumber >= 8401 && roomNumber <=8407)) {
       sNumber = "1004"
     }
   // BIOTECH BLOCK
@@ -66,7 +66,7 @@ function clicked() {
       "lat": 17.45532673434248,
       "long": 78.66764545440672,
 
-    },
+    }
 
   };
 
