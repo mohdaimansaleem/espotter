@@ -3,11 +3,7 @@ function load() {
 }
 
 function clicked() {
- let count= document.getElementById("count").innerHTML;
- count=parseInt(count);
- count++;
- document.getElementById("count").innerHTML=count;
- console.log(count);
+ 
 
   let roomNumber = document.getElementById("search").value;
   var lat = 0;
