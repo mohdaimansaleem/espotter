@@ -12,10 +12,7 @@ function clicked() {
   console.log(roomNumber)
   console.log(sNumber)
   
-  var lat = 0;
-  var lon = 0;
-
-
+ 
  
 
   if (sNumber.startsWith("11") || sNumber.startsWith("12") || sNumber.startsWith("13") || sNumber.startsWith("14")) {
@@ -70,8 +67,8 @@ function clicked() {
 
   };
 
-  lat = coordinates[sNumber]["lat"];
-  lon = coordinates[sNumber]["long"];
+  var  lat = coordinates[sNumber]["lat"];
+  var  lon = coordinates[sNumber]["long"];
 
   var map = L.map('map').setView([17.454704, 78.666414], 17);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
