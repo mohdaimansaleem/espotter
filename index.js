@@ -5,15 +5,13 @@ function load() {
 function clicked() {
  
 
-  let roomNumber = document.getElementById("search").value;
-  
+  let roomNumber = document.getElementById("search").value.toUpperCase();
   var sNumber=roomNumber; 
   roomNumber=parseInt(roomNumber);
-  console.log(roomNumber)
-  console.log(sNumber)
-  
- 
- 
+
+  if(sNumber=="3115"|| sNumber=="3116A"|| sNumber=="3116"||sNumber=="3115B"||sNumber=="3117"||sNumber=="3118"){
+    sNumber="1005";
+  }//labs
 
   if (sNumber.startsWith("11") || sNumber.startsWith("12") || sNumber.startsWith("13") || sNumber.startsWith("14")) {
     if ((roomNumber >= 1101 && roomNumber <= 1114 )|| (roomNumber >= 1201 && roomNumber <= 2214 ) || (roomNumber >= 1301 && roomNumber <=1320 )|| (roomNumber >= 1401 && roomNumber <= 1415)) {
@@ -63,13 +61,19 @@ function clicked() {
       "lat": 17.45532673434248,
       "long": 78.66764545440672,
 
+    },
+
+    "1005": {
+      "lat": 17.4547561441757,
+      "long": 78.66547286510468,
+
     }
 
   };
 
   var  lat = coordinates[sNumber]["lat"];
   var  lon = coordinates[sNumber]["long"];
-
+  
   var map = L.map('map').setView([17.454704, 78.666414], 17);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
 
