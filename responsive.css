@@ -39,6 +39,11 @@ height: auto;
     width: 100vw;
 }
 
+#btn2{
+    width:100px;
+    
+}
+
 #map{
     width: 90vw;
 }
@@ -48,6 +53,26 @@ height: 10vh;
 }
   
 }
+@media only screen and (min-height:500px) and (max-height:599px){
+    
+
+    label h3{
+    font-size: small;
+    }
+    
+    input{
+    width: 200px;
+    height: 35px;
+    }
+    
+    
+    .logo{
+    width: 125px;
+    height: auto;  
+    }
+    
+      
+    }
 
 @media only screen and (min-width:420px) and (max-width:520px){
     #nav{
