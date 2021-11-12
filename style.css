@@ -3,7 +3,6 @@ margin: 0;
 padding: 0;
 }
 
-
 #nav{
 background-color: rgb(255, 255, 255);
 display: flex;
@@ -16,7 +15,6 @@ height: 18vh;
 height: 13vh;
 width: auto;
 }
-
 
 #maindiv{
 width: 25vw;
@@ -32,8 +30,7 @@ align-items: center;
 margin-bottom: 10vh;
         
 }
-    
-    
+       
 label h3{
 text-align: center;
 margin-bottom: 2vh;
@@ -55,6 +52,7 @@ margin-top: 2vh;
 text-transform: uppercase;
     
 }
+
 .input{
 display: flex;
 flex-direction: column;   
@@ -68,6 +66,7 @@ font-size: medium;
 font-weight: bold;
     
 }
+
 #btn:hover{
 background-color: rgb(10, 100, 70);
 border-color: rgb(255, 248, 248);
@@ -82,6 +81,7 @@ border-radius: 50%;
 width: 20vh;
 height: auto;
 }
+
 #footer div{
 background-color: rgb(241, 241, 241);
 height: 10vh;
@@ -92,51 +92,72 @@ text-align: center;
 }
 
 #mapbox{
-    
-    height: 90vh;
-    background-color: rgb(212, 212, 218);
-    
+height: 90vh;
+background-color: rgb(212, 212, 218);
 }
 
 #map{
-
 width: 90vw;
 height: 80vh;
 position: relative;
 margin: auto;
 top: 2vh;
-
 }
 
-#again{
-    
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#bttns{
+height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
 #btn2{
-    position: relative;
-    top: 1vh;
-    width: 15vw;
-    border-radius: 2%;
-    background-color:rgb(23, 70, 73);
-    color: white;
-    border-color: rgb(255, 248, 248);
-    font-size: medium;
-    font-weight: bold;
-    height: 5vh;
+position: relative;
+top: 1vh;
+width: 15vw;
+border-radius: 2%;
+background-color:rgb(122, 196, 128);
+color: white;
+border-color: rgb(255, 248, 248);
+font-size: medium;
+font-weight: bold;
+height: 5vh;
+border-radius: 20px;
+margin-right: 20px;
         
-    }
-    #btn2:hover{
-    background-color: rgb(10, 100, 70);
-    border-color: rgb(255, 248, 248);
-    cursor: pointer;
-    }
+}
 
+#btn2:hover{
+background-color: rgb(10, 100, 70);
+border-color: rgb(255, 248, 248);
+cursor: pointer;
 
+}
+
+#btn3{
+position: relative;
+top: 1vh;
+width: 15vw;
+border-radius: 2%;
+background-color:#318abe;
+color: white;
+border-color: rgb(255, 248, 248);
+font-size: medium;
+font-weight: bold;
+height: 5vh;
+border-radius: 20px;
+margin-right: 20px;
+            
+}
+    
+#btn3:hover{
+background-color: #24648a;;
+border-color: rgb(255, 248, 248);
+cursor: pointer;
+    
+}
 
 p{
-    font-size: medium;
+font-size: medium;
 }
 
