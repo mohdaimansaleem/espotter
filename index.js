@@ -1,143 +1,144 @@
 //load function
-function load() {
+function reset() {
   window.location.reload();
 }
 
 
 //clicked function
-let string;
-function clicked() {
+let userText;
+function search() {
 
 
   let roomNumber = document.getElementById("search").value.toUpperCase();
-  var sNumber = roomNumber;
+
+  var stringNumber = roomNumber;
   roomNumber = parseInt(roomNumber);
   let token;
 
 
-  if (sNumber == "3115" || sNumber == "3116A" || sNumber == "3116" || sNumber == "3115B" || sNumber == "3117" || sNumber == "3118") {
-    sNumber = "1005";
+  if (stringNumber == "3115" || stringNumber == "3116A" || stringNumber == "3116" || stringNumber == "3115B" || stringNumber == "3117" || stringNumber == "3118") {
+    stringNumber = "1005";
     token = "1P";
   }//LABS
 
-  if (sNumber.startsWith("13")) {
+  if (stringNumber.startsWith("13")) {
     if ((roomNumber >= 13101 && roomNumber <= 13116)) {
-      sNumber = "1006"
+      stringNumber = "1006"
       token = "1B";
     }
   }//BASKETBALL ROOMS
 
-  if (sNumber.startsWith("1")) {
-    if (sNumber.startsWith("11") && (roomNumber >= 1101 && roomNumber <= 1114)) {
-      sNumber = "1001G";
+  if (stringNumber.startsWith("1")) {
+    if (stringNumber.startsWith("11") && (roomNumber >= 1101 && roomNumber <= 1114)) {
+      stringNumber = "1001G";
       token = "1";
 
     }
 
-    if (sNumber.startsWith("12") && (roomNumber >= 1201 && roomNumber <= 1214)) {
-      sNumber = "1001F"
+    if (stringNumber.startsWith("12") && (roomNumber >= 1201 && roomNumber <= 1214)) {
+      stringNumber = "1001F"
       token = "1";
 
     }
-    if (sNumber.startsWith("13") && (roomNumber >= 1301 && roomNumber <= 1320)) {
-      sNumber = "1001S"
+    if (stringNumber.startsWith("13") && (roomNumber >= 1301 && roomNumber <= 1320)) {
+      stringNumber = "1001S"
       token = "1";
 
     }
 
-    if (sNumber.startsWith("14") && (roomNumber >= 1401 && roomNumber <= 1415)) {
-      sNumber = "1001T"
+    if (stringNumber.startsWith("14") && (roomNumber >= 1401 && roomNumber <= 1415)) {
+      stringNumber = "1001T"
       token = "1";
 
     }
   }//ECE BLOCK 
 
 
-  if (sNumber.startsWith("2")) {
-    if (sNumber.startsWith("21") && (roomNumber >= 2101 && roomNumber <= 2112)) {
-      sNumber = "2001G"
+  if (stringNumber.startsWith("2")) {
+    if (stringNumber.startsWith("21") && (roomNumber >= 2101 && roomNumber <= 2112)) {
+      stringNumber = "2001G"
       token = "2";
 
     }
 
-    if (sNumber.startsWith("22") && (roomNumber >= 2201 && roomNumber <= 2215)) {
-      sNumber = "2001F"
+    if (stringNumber.startsWith("22") && (roomNumber >= 2201 && roomNumber <= 2215)) {
+      stringNumber = "2001F"
       token = "2";
 
     }
-    if (sNumber.startsWith("23") && (roomNumber >= 2301 && roomNumber <= 3211)) {
-      sNumber = "2001S"
+    if (stringNumber.startsWith("23") && (roomNumber >= 2301 && roomNumber <= 3211)) {
+      stringNumber = "2001S"
       token = "2";
 
     }
 
-    if (sNumber.startsWith("24") && (roomNumber >= 2401 && roomNumber <= 2414)) {
-      sNumber = "2001T"
+    if (stringNumber.startsWith("24") && (roomNumber >= 2401 && roomNumber <= 2414)) {
+      stringNumber = "2001T"
       token = "2";
 
     }
   }//IT BLOCK 
 
 
-  if (sNumber.startsWith("4")) {
-    if (sNumber.startsWith("41") && ((roomNumber >= 4101 && roomNumber <= 4112)) || (roomNumber == 4122 || roomNumber == 4124 || roomNumber == 4125 || roomNumber == 4128)) {
-      sNumber = "4001G"
+  if (stringNumber.startsWith("4")) {
+    if (stringNumber.startsWith("41") && ((roomNumber >= 4101 && roomNumber <= 4112)) || (roomNumber == 4122 || roomNumber == 4124 || roomNumber == 4125 || roomNumber == 4128)) {
+      stringNumber = "4001G"
       token = "4";
 
     }
 
-    if (sNumber.startsWith("42") && (roomNumber >= 4201 && roomNumber <= 4215)) {
-      sNumber = "4001F"
+    if (stringNumber.startsWith("42") && (roomNumber >= 4201 && roomNumber <= 4215)) {
+      stringNumber = "4001F"
       token = "4";
 
     }
-    if (sNumber.startsWith("43") && (roomNumber >= 4301 && roomNumber <= 4215)) {
-      sNumber = "4001S"
+    if (stringNumber.startsWith("43") && (roomNumber >= 4301 && roomNumber <= 4215)) {
+      stringNumber = "4001S"
       token = "4";
 
     }
 
-    if (sNumber.startsWith("44") && (roomNumber >= 4401 && roomNumber <= 4415)) {
-      sNumber = "4001T"
+    if (stringNumber.startsWith("44") && (roomNumber >= 4401 && roomNumber <= 4415)) {
+      stringNumber = "4001T"
       token = "4";
 
     }
   }//FIRST FLOOR
 
 
-  if (sNumber.startsWith("8")) {
-    if (sNumber.startsWith("81") && (roomNumber >= 8101 && roomNumber <= 8107)) {
-      sNumber = "8001G"
+  if (stringNumber.startsWith("8")) {
+    if (stringNumber.startsWith("81") && (roomNumber >= 8101 && roomNumber <= 8107)) {
+      stringNumber = "8001G"
       token = "8";
 
     }
 
-    if (sNumber.startsWith("82") && (roomNumber >= 8201 && roomNumber <= 8207)) {
-      sNumber = "8001F"
+    if (stringNumber.startsWith("82") && (roomNumber >= 8201 && roomNumber <= 8207)) {
+      stringNumber = "8001F"
       token = "8";
 
     }
-    if (sNumber.startsWith("83") && (roomNumber >= 8301 && roomNumber <= 8307)) {
-      sNumber = "8001S"
+    if (stringNumber.startsWith("83") && (roomNumber >= 8301 && roomNumber <= 8307)) {
+      stringNumber = "8001S"
       token = "8";
 
     }
 
-    if (sNumber.startsWith("84") && (roomNumber >= 8401 && roomNumber <= 8407)) {
-      sNumber = "8001T"
+    if (stringNumber.startsWith("84") && (roomNumber >= 8401 && roomNumber <= 8407)) {
+      stringNumber = "8001T"
       token = "8";
 
     }
   }//BIO TECH BLOCK
 
 
-  if (sNumber.startsWith("5")) {
+  if (stringNumber.startsWith("5")) {
     if ((roomNumber >= 5001 && roomNumber <= 5008) || (roomNumber >= 5101 && roomNumber <= 5103) || (roomNumber >= 5106 && roomNumber <= 5113)) {
-      sNumber = "5001G"
+      stringNumber = "5001G"
       token = "5";
     }
     if ((roomNumber >= 5201 && roomNumber <= 5211)) {
-      sNumber = "5001F"
+      stringNumber = "5001F"
       token = "5";
     }
 
@@ -148,7 +149,7 @@ function clicked() {
   var coordinates = {
     "1": {
       "lat": 17.455953613855996,
-      "long": 78.66597712039948,
+      "lon": 78.66597712039948,
       "type": {
         "description": {
           "1001G": "SNIST BLOCK 1\nGROUND FLOOR",
@@ -162,7 +163,7 @@ function clicked() {
 
     "2": {
       "lat": 17.455692627545062,
-      "long": 78.6670795083046,
+      "lon": 78.6670795083046,
       "type": {
         "description": {
           "2001G": "SNIST BLOCK 2\nGROUND FLOOR",
@@ -176,7 +177,7 @@ function clicked() {
 
     "4": {
       "lat": 17.455498166913493,
-      "long": 78.66765215992928,
+      "lon": 78.66765215992928,
       "type": {
         "description": {
           "4001G": "SNIST FIRST YEAR BLOCK\nGROUND FLOOR",
@@ -190,7 +191,7 @@ function clicked() {
 
     "8": {
       "lat": 17.45532673434248,
-      "long": 78.66764545440672,
+      "lon": 78.66764545440672,
       "type": {
         "description": {
           "8001G": "SNIST BIO TECH BLOCK\nGROUND FLOOR",
@@ -204,7 +205,7 @@ function clicked() {
 
     "1P": {
       "lat": 17.4547561441757,
-      "long": 78.66547286510468,
+      "lon": 78.66547286510468,
       "type": {
         "description": {
           "1005": "NEAR SNIST PARKING",
@@ -214,7 +215,7 @@ function clicked() {
 
     "1B": {
       "lat": 17.45716131034895,
-      "long": 78.66805851459503,
+      "lon": 78.66805851459503,
       "type": {
         "description": {
           "1006": "NEAR BASKET BALL COURT",
@@ -224,7 +225,7 @@ function clicked() {
 
     "5": {
       "lat": 17.45522182776426,
-      "long": 78.6665028333664,
+      "lon": 78.6665028333664,
       "type": {
         "description": {
           "5001G": "SNIST ADMIN BLOCK\nGROUND FLOOR",
@@ -238,19 +239,25 @@ function clicked() {
   };
 
   var lat = coordinates[token]["lat"];
-  var lon = coordinates[token]["long"];
+  var lon = coordinates[token]["lon"];
 
-  var map = L.map('map').setView([17.454704, 78.666414], 18);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+  if (lat != undefined) {
+    document.getElementById("mapbox").style.display = "flex";
+    var map = L.map('map').setView([17.454704, 78.666414], 18);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
 
-  L.marker([lat, lon]).addTo(map)
-  string = "DIRECTION:\n" + coordinates[token]["type"]["description"][sNumber] + "\nROOM NUMBER:" + roomNumber + "\nPRESS OK TO VIEW MAP";
+
+    L.marker([lat, lon]).addTo(map)
+    userText = "DIRECTION:\n" + coordinates[token]["type"]["description"][stringNumber] + "\nROOM NUMBER:" + roomNumber + "\nPRESS OK TO VIEW MAP";
+
+  }
+
 
 }
 
 //direction function
 function direct() {
-  alert(string);
+  alert(userText);
 }
 
 
