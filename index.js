@@ -254,7 +254,7 @@ function search() {
 
 
     L.marker([lat, lon]).addTo(map)
-    userText = coordinates[token]["type"]["description"][stringNumber] + "\nROOM NUMBER: " + roomNumber;
+    userText = "DIRECTION:\n" + coordinates[token]["type"]["description"][stringNumber] + "\nROOM NUMBER: " + roomNumber;
 
   }
 
@@ -317,7 +317,7 @@ function modal2() {
   var span = document.getElementsByClassName("close")[0];
 
   document.getElementById("usertext").innerText = userText;
-
+  
   // When the user clicks the button, open the modal 
 
   modal.style.display = "block";
