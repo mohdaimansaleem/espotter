@@ -5,15 +5,15 @@ function reset() {
 
 
 //clicked function
-let userText;
+let userText = "ENTER A VALID ROOM NUMBER";
+let token = -1;
 function search() {
 
 
   let roomNumber = document.getElementById("search").value.toUpperCase();
-
   var stringNumber = roomNumber;
   roomNumber = parseInt(roomNumber);
-  let token;
+
 
 
   if (stringNumber == "3115" || stringNumber == "3116A" || stringNumber == "3116" || stringNumber == "3115B" || stringNumber == "3117" || stringNumber == "3118") {
@@ -56,7 +56,7 @@ function search() {
 
   if (stringNumber.startsWith("2")) {
     if (stringNumber.startsWith("21") && (roomNumber >= 2101 && roomNumber <= 2112)) {
-      stringNumber = "2001G"
+      stringumber = "2001G"
       token = "2";
 
     }
@@ -238,28 +238,102 @@ function search() {
 
   };
 
-  var lat = coordinates[token]["lat"];
-  var lon = coordinates[token]["lon"];
 
-  if (lat != undefined) {
+
+  if (token === -1) {
+    modal();
+  }
+  else {
+    var lat = coordinates[token]["lat"];
+    var lon = coordinates[token]["lon"];
+
+
     document.getElementById("mapbox").style.display = "flex";
     var map = L.map('map').setView([17.454704, 78.666414], 18);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
 
 
     L.marker([lat, lon]).addTo(map)
-    userText = "DIRECTION:\n" + coordinates[token]["type"]["description"][stringNumber] + "\nROOM NUMBER:" + roomNumber + "\nPRESS OK TO VIEW MAP";
+    userText = coordinates[token]["type"]["description"][stringNumber] + "\nROOM NUMBER: " + roomNumber;
 
   }
 
-
 }
 
+function modal() {
+
+  if (token == -1) {
+
+
+
+
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    document.getElementById("usertext").innerText = userText;
+
+    // When the user clicks the button, open the modal 
+
+    modal.style.display = "block";
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  }
+
+}
 //direction function
 function direct() {
-  alert(userText);
+  modal2();
 }
 
+function modal2() {
 
+
+
+
+
+
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  document.getElementById("usertext").innerText = userText;
+
+  // When the user clicks the button, open the modal 
+
+  modal.style.display = "block";
+
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
 
 
