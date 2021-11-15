@@ -53,6 +53,11 @@ height: auto;
     width: 90vw;
 }
 
+.modal-content {
+  
+    width: 90vw;
+   
+  }
 #footer div{
 height: 10vh;
 }
@@ -132,6 +137,12 @@ height: 10vh;
         #map{
             width: 90vw;
         }
+
+        .modal-content {
+  
+            width: 90vw;
+           
+          }
         
         #footer div{
         height: 10vh;
@@ -198,6 +209,12 @@ height: 10vh;
     width: 200px;
     height: auto;  
     }
+
+    .modal-content {
+  
+        width: 90vw;
+       
+      }
     
     #footer div{
     height: 10vh;
@@ -266,6 +283,12 @@ height: 10vh;
     width: 200px;
     height: auto;  
     }
+
+    .modal-content {
+  
+        width: 90vw;
+       
+      }
     
     #footer div{
     height: 10vh;
