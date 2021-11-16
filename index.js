@@ -3,12 +3,10 @@ function reset() {
   window.location.reload();
 }
 
-
 //clicked function
 let userText = "ENTER A VALID ROOM NUMBER";
 let token = -1;
 function search() {
-
 
   let roomNumber = document.getElementById("search").value.toUpperCase();
   var stringNumber = roomNumber;
@@ -56,7 +54,7 @@ function search() {
 
   if (stringNumber.startsWith("2")) {
     if (stringNumber.startsWith("21") && (roomNumber >= 2101 && roomNumber <= 2112)) {
-      stringumber = "2001G"
+      stringNumber = "2001G"
       token = "2";
 
     }
@@ -145,6 +143,34 @@ function search() {
   }//ADMIN BLOCK
 
 
+  if (stringNumber.startsWith("9") || stringNumber.startsWith("10") || stringNumber.startsWith("11")) {
+
+    if ((roomNumber >= 9101 && roomNumber <= 9115)) {
+      stringNumber = "404N"
+      token = "10";
+    }
+
+    if ((roomNumber >= 10101 && roomNumber <= 10108)) {
+      stringNumber = "404N"
+      token = "10";
+    }
+    if ((roomNumber >= 11101 && roomNumber <= 11103)) {
+      stringNumber = "404N"
+      token = "10";
+    }
+
+  }//LABS NEAR BASKETBALL
+
+
+  if (stringNumber.startsWith("6")) {
+    if ((roomNumber >= 6001 && roomNumber <= 6010)) {
+      stringNumber = "600"
+      token = "6";
+    }
+
+
+  }//THERMAL LABS
+
 
   var coordinates = {
     "1": {
@@ -152,10 +178,10 @@ function search() {
       "lon": 78.66597712039948,
       "type": {
         "description": {
-          "1001G": "SNIST BLOCK 1\nGROUND FLOOR",
-          "1001F": "SNIST BLOCK 1\nFIRST FLOOR",
-          "1001S": "SNIST BLOCK 1\nSECOND FLOOR",
-          "1001T": "SNIST BLOCK 1\nTHIRD FLOOR",
+          "1001G": "BLOCK 1\nGROUND FLOOR",
+          "1001F": "BLOCK 1\nFIRST FLOOR",
+          "1001S": "BLOCK 1\nSECOND FLOOR",
+          "1001T": "BLOCK 1\nTHIRD FLOOR",
         }
 
       },
@@ -166,10 +192,10 @@ function search() {
       "lon": 78.6670795083046,
       "type": {
         "description": {
-          "2001G": "SNIST BLOCK 2\nGROUND FLOOR",
-          "2001F": "SNIST BLOCK 2\nFIRST FLOOR",
-          "2001S": "SNIST BLOCK 2\nSECOND FLOOR",
-          "2001T": "SNIST BLOCK 2\nTHIRD FLOOR",
+          "2001G": "BLOCK 2\nGROUND FLOOR",
+          "2001F": "BLOCK 2\nFIRST FLOOR",
+          "2001S": "BLOCK 2\nSECOND FLOOR",
+          "2001T": "BLOCK 2\nTHIRD FLOOR",
         }
 
       },
@@ -180,10 +206,10 @@ function search() {
       "lon": 78.66765215992928,
       "type": {
         "description": {
-          "4001G": "SNIST FIRST YEAR BLOCK\nGROUND FLOOR",
-          "4001F": "SNIST FIRST YEAR BLOCK\nFIRST FLOOR",
-          "4001S": "SNIST FIRST YEAR BLOCK\nSECOND FLOOR",
-          "4001T": "SNIST FIRST YEAR BLOCK\nTHIRD FLOOR",
+          "4001G": "FIRST YEAR BLOCK\nGROUND FLOOR",
+          "4001F": "FIRST YEAR BLOCK\nFIRST FLOOR",
+          "4001S": "FIRST YEAR BLOCK\nSECOND FLOOR",
+          "4001T": "FIRST YEAR BLOCK\nTHIRD FLOOR",
         }
 
       },
@@ -194,10 +220,10 @@ function search() {
       "lon": 78.66764545440672,
       "type": {
         "description": {
-          "8001G": "SNIST BIO TECH BLOCK\nGROUND FLOOR",
-          "8001F": "SNIST BIO TECH BLOCK\nFIRST FLOOR",
-          "8001S": "SNIST BIO TECH BLOCK\nSECOND FLOOR",
-          "8001T": "SNIST BIO TECH BLOCK\nTHIRD FLOOR",
+          "8001G": "BIO TECH BLOCK\nGROUND FLOOR",
+          "8001F": "BIO TECH BLOCK\nFIRST FLOOR",
+          "8001S": "BIO TECH BLOCK\nSECOND FLOOR",
+          "8001T": "BIO TECH BLOCK\nTHIRD FLOOR",
         }
 
       },
@@ -208,7 +234,7 @@ function search() {
       "lon": 78.66547286510468,
       "type": {
         "description": {
-          "1005": "NEAR SNIST PARKING",
+          "1005": "NEAR PARKING",
         }
       },
     },
@@ -218,7 +244,7 @@ function search() {
       "lon": 78.66805851459503,
       "type": {
         "description": {
-          "1006": "NEAR BASKET BALL COURT",
+          "1006": "NEAR BASKETBALL COURT",
         }
       },
     },
@@ -228,13 +254,34 @@ function search() {
       "lon": 78.6665028333664,
       "type": {
         "description": {
-          "5001G": "SNIST ADMIN BLOCK\nGROUND FLOOR",
-          "5001F": "SNIST ADMIN BLOCK\nFIRST FLOOR",
+          "5001G": "ADMIN BLOCK\nGROUND FLOOR",
+          "5001F": "ADMIN BLOCK\nFIRST FLOOR",
         }
 
       },
     },
 
+    "10": {
+      "lat": 17.457647457101128,
+      "lon": 78.66761326789856,
+      "type": {
+        "description": {
+          "404N": "NEAR BASKETBALL COURT",
+        }
+
+      },
+    },
+
+    "6": {
+      "lat": 17.457204807742773,
+      "lon": 78.6674228310585,
+      "type": {
+        "description": {
+          "600": "NEAR BASKETBALL COURT",
+        }
+
+      },
+    },
 
   };
 
@@ -249,7 +296,7 @@ function search() {
 
 
     document.getElementById("mapbox").style.display = "flex";
-    var map = L.map('map').setView([17.454704, 78.666414], 18);
+    var map = L.map('map').setView([17.454704, 78.666414], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
 
 
@@ -268,26 +315,13 @@ function modal() {
 
 
     var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
     var btn = document.getElementById("btn");
-
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-
     document.getElementById("usertext").innerText = userText;
-
-    // When the user clicks the button, open the modal 
-
     modal.style.display = "block";
-
-
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal.style.display = "none";
     }
-
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = "none";
@@ -296,39 +330,22 @@ function modal() {
   }
 
 }
-//direction function
+
 function direct() {
   modal2();
 }
 
 function modal2() {
 
-
-
-
-
-
   var modal = document.getElementById("myModal");
-
-  // Get the button that opens the modal
   var btn = document.getElementById("btn");
-
-  // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
-
   document.getElementById("usertext").innerText = userText;
-  
-  // When the user clicks the button, open the modal 
-
   modal.style.display = "block";
-
-
-  // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
     modal.style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
