@@ -1,230 +1,245 @@
 *{
-margin: 0;
-padding: 0;
-}
-
-#nav{
-background-color: rgb(255, 255, 255);
-display: flex;
-align-items: center;
-justify-content: center;
-height: 18vh;
-}
-
-.clg{
-height: 13vh;
-width: auto;
-}
-
-#maindiv{
-width: 25vw;
-height: 72vh;
-display: flex;
-margin: auto;
-background-image:url("background2.jpeg");
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 30px;
-justify-content: center;
-align-items: center;
-margin-bottom: 10vh;
-        
-}
-       
-label h3{
-text-align: center;
-margin-bottom: 2vh;
-margin-top: 50px;
-font-size: larger;
-color: rgb(255, 255, 255);
-background-color: rgb(104, 104, 104);
-font-weight: bolder;
-        
-}
-
-input{
-width: 20vw;
-height: 6vh;
-border-radius: 20px;
-text-align: center;
-font-weight: bold;
-margin-top: 2vh;
-text-transform: uppercase;
-    
-}
-
-.input{
-display: flex;
-flex-direction: column;   
-}
-
-#btn{
-background-color:rgb(23, 70, 73);
-color: white;
-border-color: rgb(255, 248, 248);
-font-size: medium;
-font-weight: bold;
-    
-}
-
-#btn:hover{
-background-color: rgb(10, 100, 70);
-border-color: rgb(255, 248, 248);
-cursor: pointer;
-}
-
-.logo{
-display: flex;
-background-attachment: fixed;
-align-self: center;
-border-radius: 50%;
-width: 20vh;
-height: auto;
-}
-
-#footer div{
-background-color: rgb(241, 241, 241);
-height: 10vh;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-
-#mapbox{
-display: none;
-flex-direction: column;
-height: 90vh;
-background-color: rgb(212, 212, 218);
-}
-
-#map{
-width: 90vw;
-height: 80vh;
-position: relative;
-margin: auto;
-top: 2vh;
-z-index: 3;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#bttns{
-height: 10vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-#btn2{
-position: relative;
-top: 1vh;
-width: 15vw;
-border-radius: 2%;
-background-color:rgb(122, 196, 128);
-color: white;
-border-color: rgb(255, 248, 248);
-font-size: medium;
-font-weight: bold;
-height: 5vh;
-border-radius: 20px;
-margin-right: 20px;
-        
-}
-
-#btn2:hover{
-background-color: rgb(10, 100, 70);
-border-color: rgb(255, 248, 248);
-cursor: pointer;
-
-}
-
-#btn3{
-position: relative;
-top: 1vh;
-width: 15vw;
-border-radius: 2%;
-background-color:#318abe;
-color: white;
-border-color: rgb(255, 248, 248);
-font-size: medium;
-font-weight: bold;
-height: 5vh;
-border-radius: 20px;
-margin-right: 20px;
-            
-}
-    
-#btn3:hover{
-background-color: #24648a;;
-border-color: rgb(255, 248, 248);
-cursor: pointer;
-    
-}
-
-p{
-font-size: medium;
-text-align: center;
-}
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  z-index: 100;
-}
-
-/* Modal Content */
-
-
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40vw;
- 
-}
-
-h5{
-  text-align: center;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#body{
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
+  margin: 0;
+  padding: 0;
   }
+  
+  #nav{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+  }
+  
+  .clg{
+  height: 13vh;
+  width: auto;
+  }
+
+  #mail{
+    width: 0px;
+    height: 0px;
+   
+  }
+  #mails{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+  }
+  
+  #maindiv{
+  width: 25vw;
+  height: 72vh;
+  display: flex;
+  margin: auto;
+  background-image:url("background2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+          
+  }
+         
+  label h3{
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-top: 50px;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  background-color: rgb(104, 104, 104);
+  font-weight: bolder;
+          
+  }
+  
+  input{
+  width: 20vw;
+  height: 6vh;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2vh;
+  text-transform: uppercase;
+      
+  }
+  
+  .input{
+  display: flex;
+  flex-direction: column;   
+  }
+  
+  #btn{
+  background-color:rgb(23, 70, 73);
+  color: white;
+  border-color: rgb(255, 248, 248);
+  font-size: medium;
+  font-weight: bold;
+      
+  }
+  
+  #btn:hover{
+  background-color: rgb(10, 100, 70);
+  border-color: rgb(255, 248, 248);
+  cursor: pointer;
+  }
+  
+  .logo{
+  display: flex;
+  background-attachment: fixed;
+  align-self: center;
+  border-radius: 50%;
+  width: 20vh;
+  height: auto;
+  }
+  
+  #footer div{
+  background-color: rgb(241, 241, 241);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  
+  #mapbox{
+  display: none;
+  flex-direction: column;
+  height: 90vh;
+  background-color: rgb(212, 212, 218);
+  }
+  
+  #map{
+  width: 90vw;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+  top: 2vh;
+  z-index: 3;
+  }
+  
+  form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  #bttns{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  #btn2{
+  position: relative;
+  top: 1vh;
+  width: 15vw;
+  border-radius: 2%;
+  background-color:rgb(122, 196, 128);
+  color: white;
+  border-color: rgb(255, 248, 248);
+  font-size: medium;
+  font-weight: bold;
+  height: 5vh;
+  border-radius: 20px;
+  margin-right: 20px;
+          
+  }
+  
+  #btn2:hover{
+  background-color: rgb(10, 100, 70);
+  border-color: rgb(255, 248, 248);
+  cursor: pointer;
+  
+  }
+  
+  #btn3{
+  position: relative;
+  top: 1vh;
+  width: 15vw;
+  border-radius: 2%;
+  background-color:#318abe;
+  color: white;
+  border-color: rgb(255, 248, 248);
+  font-size: medium;
+  font-weight: bold;
+  height: 5vh;
+  border-radius: 20px;
+  margin-right: 20px;
+              
+  }
+      
+  #btn3:hover{
+  background-color: #24648a;;
+  border-color: rgb(255, 248, 248);
+  cursor: pointer;
+      
+  }
+  
+  p{
+  font-size: medium;
+  text-align: center;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 100;
+  }
+  
+  /* Modal Content */
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40vw;
+   
+  }
+  
+  h5{
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #body{
+      -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
+  
