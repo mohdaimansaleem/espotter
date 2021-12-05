@@ -7,7 +7,7 @@ function reset() {
 let userText = "ENTER A VALID ROOM NUMBER";
 let token = -1;
 function search() {
-
+  document.getElementById("btn").click();
   let roomNumber = document.getElementById("search").value.toUpperCase();
   var stringNumber = roomNumber;
   roomNumber = parseInt(roomNumber);
@@ -294,7 +294,8 @@ function search() {
     var lat = coordinates[token]["lat"];
     var lon = coordinates[token]["lon"];
 
-
+    document.getElementById("mainbody").style.display = "none";
+    document.getElementById("mail").style.display = "none";
     document.getElementById("mapbox").style.display = "flex";
     var map = L.map('map').setView([17.454704, 78.666414], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
