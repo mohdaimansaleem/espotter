@@ -7,7 +7,7 @@ function reset() {
 let userText = "ENTER A VALID ROOM NUMBER";
 let token = -1;
 function search() {
-  document.getElementById("btn").click();
+  
   let roomNumber = document.getElementById("search").value.toUpperCase();
   var stringNumber = roomNumber;
   roomNumber = parseInt(roomNumber);
