@@ -64,7 +64,7 @@ function search() {
       token = "2";
 
     }
-    if (stringNumber.startsWith("23") && (roomNumber >= 2301 && roomNumber <= 3211)) {
+    if (stringNumber.startsWith("23") && (roomNumber >= 2301 && roomNumber <= 2311)) {
       stringNumber = "2001S"
       token = "2";
 
@@ -90,7 +90,7 @@ function search() {
       token = "4";
 
     }
-    if (stringNumber.startsWith("43") && (roomNumber >= 4301 && roomNumber <= 4215)) {
+    if (stringNumber.startsWith("43") && (roomNumber >= 4301 && roomNumber <= 4315)) {
       stringNumber = "4001S"
       token = "4";
 
