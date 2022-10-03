@@ -35,7 +35,7 @@
   height: 72vh;
   display: flex;
   margin: auto;
-  background-image:url("background2.jpeg");
+  background-image:url("resources/background2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
